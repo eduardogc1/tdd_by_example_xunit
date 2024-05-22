@@ -42,7 +42,7 @@ class TestResult:
     def testStarted(self):
         self.runCount = self.runCount + 1
     def summary(self):
-        return "%d run, %d failed" % (self.runCount, self.failureCount)
+        return "%d run, %d failed" % (self.runCount, self.errorCount)
     def testBrokenMethod(self):
         raise Exception
 
